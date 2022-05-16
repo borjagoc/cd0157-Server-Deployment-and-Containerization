@@ -14,7 +14,7 @@ phases:
       # Get latest stable release kubectl
       - curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
         # Command for specific kubectl version:
-      - curl -o kubectl https://s3.eu-west-3.amazonaws.com/amazon-eks/1.22.6/2022-03-09/bin/darwin/amd64/kubectl
+      - curl -o kubectl https://s3.eu-west-3.amazonaws.com/amazon-eks/1.22.6/2022-03-09/bin/linux/amd64/kubectl
       - chmod +x ./kubectl ./aws-iam-authenticator
       - echo `kubectl version`
       - export PATH=$PWD/:$PATH
